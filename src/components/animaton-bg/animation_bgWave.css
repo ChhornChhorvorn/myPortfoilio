@@ -1,0 +1,24 @@
+@keyframes wave{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes wave-reverse {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+.animate-wave-slow{
+    animation: wave 25s linear infinite;
+}
+.animate-wave-medium{
+    animation: wave 25s linear infinite;
+}
+.animate-wave-reverse-medium {
+  animation: wave-reverse 20s linear infinite;
+}
+.animate-wave-fast{
+    animation: wave 15s linear infinite;
+}
