@@ -22,22 +22,22 @@ const Hero = () => {
         </div>
         <div className='relative h-[420px] md:h-[520px] reveal'>
             {/* Glass card background */}
-            <div className='absolute inset-0 rounded-[36px] bg-gradient-to-tr from-brand-100 to-white border border-white/50 backdrop-blur-xl shadow-xl'></div>
+            <div className='absolute inset-0 rounded-[36px]'></div>
             <div className='relative z-10 flex h-full items-center justify-center p-6'>
                 <div className='relative w-full max-w-sm aspect-[3/4] rounded-[40%] overflow-hidden shadow-2xl'>
                     {/* gradient border glow */}
-                    <div className='absolute inset-0 rounded-[40%] bg-gradient-to-tr from-brand-400/40 via-fuchsia-400/40 to-brand-600/40 blur-2xl'></div>
+                    <div className='absolute inset-0 rounded-[40%] blur-2xl'></div>
                     <img src={assets.profile} alt="profile" className='relative z-10 h-full w-full object-cover rounded-[40%] animate-float' />
                 </div>
             </div>
             {/* floating chips */}
-            <div className='pointer-events-none absolute -top-3 -left-3 rounded-2xl bg-white/70 backdrop-blur py-1 text-xs font-semibold shadow'>React</div>
+            {/* <div className='pointer-events-none absolute -top-3 -left-3 rounded-2xl bg-white/70 backdrop-blur py-1 text-xs font-semibold shadow'>React</div>
             <div className='pointer-events-none absolute top-6 -right-4 rounded-2xl bg-white/70 backdrop-blur px-3 py-1 text-xs font-semibold shadow'>Tailwind</div>
-            <div className='pointer-events-none absolute -bottom-3 left-10 rounded-2xl bg-white/70 backdrop-blur px-3 py-1 text-xs font-semibold shadow'>Figma</div>
+            <div className='pointer-events-none absolute -bottom-3 left-10 rounded-2xl bg-white/70 backdrop-blur px-3 py-1 text-xs font-semibold shadow'>Figma</div> */}
         </div>
       </div>
     </div>
-    <div id='projects' className='mt-24 bg-gradient-to-b from-transparent to-brand-50/60'>
+    <div id='projects' className='mt-24'>
         <div className='mx-auto max-w-7xl px-4 py-16'>
             <div className='reveal flex items-end justify-between gap-6'>
                 <div>

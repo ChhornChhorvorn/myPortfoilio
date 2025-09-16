@@ -23,6 +23,9 @@ const ParticlesBackground = () => {
       darkQuery.removeEventListener("change", handleThemeChange);
     };
   }, []);
+  // useEffect(() =>{
+  //   document.body.style.backgroundColor = theme === "dark" ? "#000000" : "#ffffff";
+  // }, [theme]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -91,7 +94,11 @@ const ParticlesBackground = () => {
     }
 
     function animate() {
-      ctx.fillStyle = theme === "dark" ? "#000000" : "#FFFFFF";
+      // ctx.fillStyle = theme === "dark" ? "#000000" : "#FFFFFF";
+      ctx.fillStyle = theme === "dark"
+      ? "rgba(0, 0, 0, 0.6)"  //black/60 in dark mode
+      : "rgba(255, 255, 255, 0.6)"  //white/60 in light mode
+      // ctx.clearRect(0, 0, width, height);
       ctx.fillRect(0, 0, width, height);
 
       particlesArray.current.forEach((p) => p.update());

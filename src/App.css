@@ -28,7 +28,7 @@
 .animate-slide {
   display: flex;
   width: max-content;
-  animation: slide 15s linear infinite;
+  animation: slide 20s linear infinite;
 }
 /* @keyframes blob{
   0%{

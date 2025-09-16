@@ -17,19 +17,19 @@ const Skills = () => {
     ];
 
   return (
-    <div className="bg-white/60 backdrop-blur py-16">
-      <div className="mx-auto max-w-7xl px-4">
-        <h2 className="reveal text-center font-display text-3xl md:text-4xl font-bold">
+    <div className=" backdrop-blur py-16">
+      <div className="mx-auto max-w-[1440px] px-4"> {/*mx-auto max-w-7xl*/}
+        <h2 className="reveal text-center font-display text-white text-3xl md:text-4xl font-bold">
           My Superpower
         </h2>
 
-        {/* Scrolling animation container */}
+        {/* Scrolling animation container */}{/*full-width*/}
         <div className="mt-10 overflow-hidden">
           <div className="animate-slide flex gap-6">
             {skills.map((skill, i) => (
               <div
                 key={i}
-                className="reveal rounded-2xl border border-white/60 bg-white/70 p-6 text-center shadow hover:shadow-lg transition"
+                className="reveal flex flex-col justify-center items-center w-32 h-32 rounded-full border border-white/60 bg-white/70 p-6 text-center shadow hover:shadow-lg transition"
               >
                 <img 
                   src={skill.img} 
@@ -44,7 +44,7 @@ const Skills = () => {
             {skills.map((skill, i) => (
               <div
                 key={`copy-${i}`}
-                className="reveal rounded-2xl border border-white/60 bg-white/70 p-6 text-center shadow hover:shadow-lg transition"
+                className="reveal flex flex-col justify-center items-center w-32 h-32 rounded-full border border-white/60 bg-white/70 p-6 text-center shadow hover:shadow-lg transition"
               >
                 <img 
                   src={skill.img} 
